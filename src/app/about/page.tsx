@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center">
-          <h1 className="font-headline text-4xl font-bold tracking-tight md:text-5xl">About Sanctuary Hub</h1>
+          <h1 className="font-headline text-4xl font-bold tracking-tight md:text-5xl">About True love Assemblies of God</h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
             Learn about our story, our values, and the people who lead our community.
           </p>
@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <div>
                     <h2 className="font-headline text-3xl font-bold">Our History</h2>
                     <p className="mt-4 text-muted-foreground">
-                        Founded in 1958, Sanctuary Hub began as a small prayer group meeting in a community hall. With a heart for the city and a passion for the Gospel, our founders envisioned a place where people from all walks of life could find a spiritual home. Through decades of growth and change, our core mission has remained the same: to be a beacon of hope and a center for compassionate service.
+                        Founded in 1958, True love Assemblies of God began as a small prayer group meeting in a community hall. With a heart for the city and a passion for the Gospel, our founders envisioned a place where people from all walks of life could find a spiritual home. Through decades of growth and change, our core mission has remained the same: to be a beacon of hope and a center for compassionate service.
                     </p>
                     <p className="mt-4 text-muted-foreground">
                         Today, we are a vibrant, multi-generational church that continues to build on this legacy of faith and community.

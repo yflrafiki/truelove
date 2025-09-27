@@ -26,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-            Welcome to Sanctuary Hub
+            Welcome to True love Assemblies of God
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
             A place of faith, hope, and community.

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <Link href="/" className="flex items-center gap-2">
               <Logo className="h-10 w-10 text-primary" />
-              <span className="font-headline text-2xl font-bold">Sanctuary Hub</span>
+              <span className="font-headline text-2xl font-bold">True love Assemblies of God</span>
             </Link>
             <p className="mt-4 text-muted-foreground">
               A community of faith, hope, and love.
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Sanctuary Hub. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} True love Assemblies of God. All rights reserved.</p>
         </div>
       </div>
     </footer>

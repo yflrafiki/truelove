@@ -5,7 +5,7 @@ import Footer from '@/components/layout/footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sanctuary Hub - A Modern Church Community',
+  title: 'True love Assemblies of God - A Modern Church Community',
   description: 'Join our community. Explore services, events, and sermons.',
 };
 

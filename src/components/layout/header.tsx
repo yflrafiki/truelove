@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, HandHeart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" onClick={() => setIsSheetOpen(false)}>
           <Logo className="h-8 w-8 text-primary" />
-          <span className="font-headline text-2xl font-bold">Sanctuary Hub</span>
+          <span className="font-headline text-2xl font-bold">True love Assemblies of God</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {NAV_LINKS.map((link) => (
@@ -36,9 +36,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <Button className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
-             <HandHeart className="mr-2 h-4 w-4" /> Donate
-          </Button>
+          
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -51,7 +49,7 @@ export default function Header() {
                  <div className="flex items-center justify-between p-4 border-b">
                    <Link href="/" className="flex items-center gap-2" onClick={() => setIsSheetOpen(false)}>
                       <Logo className="h-8 w-8 text-primary" />
-                      <span className="font-headline text-2xl font-bold">Sanctuary Hub</span>
+                      <span className="font-headline text-2xl font-bold">True love Assemblies of God</span>
                    </Link>
                    <SheetClose asChild>
                       <Button variant="ghost" size="icon">
@@ -76,9 +74,7 @@ export default function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto p-4">
-                    <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                        <HandHeart className="mr-2 h-4 w-4" /> Donate
-                    </Button>
+                    
                 </div>
               </div>
             </SheetContent>
