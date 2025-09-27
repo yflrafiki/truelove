@@ -4,7 +4,8 @@ import Map from '@/components/map';
 import { getMapsApiKey } from '@/app/actions';
 
 const serviceTimes = [
-  { day: 'Sunday', time: '8:00 AM - 12:00 PM', description: 'Main Service (Sunday School: 11:00 AM - 11:30 AM)' },
+  { day: 'Sunday', time: '8:00 AM - 11:00 AM', description: 'Main Service' },
+  { day: 'Sunday', time: '11:00 AM - 11:30 AM', description: 'Sunday School' },
   { day: 'Wednesday', time: '9:00 AM - 11:00 AM', description: 'Victory Hour' },
   { day: 'Wednesday', time: '6:30 PM - 8:00 PM', description: 'Bible Studies' },
   { day: 'Friday', time: '6:30 PM - 8:00 PM', description: 'Prayer Time' },
