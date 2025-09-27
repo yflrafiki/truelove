@@ -112,14 +112,6 @@ export const ministries: Ministry[] = [
     meetingTime: 'Sundays at 9:00 AM',
     image: 'ministry_sundayschool',
   },
-  {
-    id: 8,
-    name: "Pastor's Appreciation",
-    description: 'A special day to honor and show our gratitude for our dedicated pastors.',
-    leader: 'Church Board',
-    meetingTime: 'Annually in October',
-    image: 'ministry_pastorappreciation',
-  },
 ];
 
 export const leaders: Leader[] = [

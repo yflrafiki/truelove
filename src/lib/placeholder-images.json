@@ -107,12 +107,6 @@
       "description": "A classroom setting for sunday school.",
       "imageUrl": "https://images.unsplash.com/photo-1574132190990-cfd62178bb1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbGFzc3Jvb20lMjBzdHVkeXxlbnwwfHx8fDE3NTg5Njg1MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classroom study"
-    },
-    {
-      "id": "ministry_pastorappreciation",
-      "description": "A pastor being appreciated by the congregation.",
-      "imageUrl": "https://images.unsplash.com/photo-1686768173513-30d39a6af1a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFzdG9yJTIwY29uZ3JlZ2F0aW9ufGVufDB8fHx8MTc1OTAwNzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "pastor congregation"
     }
   ]
 }
