@@ -1,3 +1,100 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A beautiful modern church interior with light streaming through the windows.",
+      "imageUrl": "https://images.unsplash.com/photo-1706109576976-361ba78dcb56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaHVyY2glMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTg5NjEzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "church interior"
+    },
+    {
+      "id": "event1",
+      "description": "A group of people happily singing in a choir.",
+      "imageUrl": "https://images.unsplash.com/photo-1722252799291-cac3184d0255?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tbXVuaXR5JTIwZ2F0aGVyaW5nfGVufDB8fHx8MTc1ODkzODY2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community gathering"
+    },
+    {
+      "id": "event2",
+      "description": "Volunteers packing food donations.",
+      "imageUrl": "https://images.unsplash.com/photo-1706806595208-0e823368f240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2b2x1bnRlZXIlMjB3b3JrfGVufDB8fHx8MTc1OTAwNjU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "volunteer work"
+    },
+    {
+      "id": "event3",
+      "description": "Children participating in a bible study class.",
+      "imageUrl": "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMGxlYXJuaW5nfGVufDB8fHx8MTc1ODk1NDY5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "children learning"
+    },
+    {
+      "id": "leader1",
+      "description": "Portrait of Pastor John Doe.",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg5NTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "leader2",
+      "description": "Portrait of Ministry Leader Jane Smith.",
+      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODk3MzQ2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "leader3",
+      "description": "Portrait of Youth Pastor Michael Chen.",
+      "imageUrl": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc1ODkwMDczMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person smiling"
+    },
+    {
+      "id": "leader4",
+      "description": "Portrait of Music Director Emily White.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496130141-209d200cebd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21hbiUyMGxlYWRlcnxlbnwwfHx8fDE3NTg5OTgwNzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman leader"
+    },
+    {
+      "id": "sermon1",
+      "description": "Thumbnail for a sermon about hope.",
+      "imageUrl": "https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdW5yaXNlJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc1ODk4MDUwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunrise landscape"
+    },
+    {
+      "id": "sermon2",
+      "description": "Thumbnail for a sermon about faith.",
+      "imageUrl": "https://images.unsplash.com/photo-1593455934166-118c2a4aa67e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHBhdGh8ZW58MHx8fHwxNzU4OTEyNTYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain path"
+    },
+    {
+      "id": "sermon3",
+      "description": "Thumbnail for a sermon about love.",
+      "imageUrl": "https://images.unsplash.com/photo-1612490566236-00f117eae834?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoZWFydCUyMHNoYXBlfGVufDB8fHx8MTc1OTAwNjU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "heart shape"
+    },
+    {
+      "id": "ministry_youth",
+      "description": "Teenagers in a youth group.",
+      "imageUrl": "https://images.unsplash.com/photo-1622318731211-3bcfcf8849c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWVuYWdlcnMlMjBmcmllbmRzfGVufDB8fHx8MTc1OTAwNjU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teenagers friends"
+    },
+    {
+      "id": "ministry_outreach",
+      "description": "Community outreach event.",
+      "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBzZXJ2aWNlfGVufDB8fHx8MTc1ODk1Njg3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community service"
+    },
+    {
+      "id": "ministry_music",
+      "description": "Church worship band playing music.",
+      "imageUrl": "https://images.unsplash.com/photo-1554841217-b97997550421?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b3JzaGlwJTIwbXVzaWN8ZW58MHx8fHwxNzU5MDA2NTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "worship music"
+    },
+    {
+      "id": "ministry_children",
+      "description": "Children in a sunday school class.",
+      "imageUrl": "https://images.unsplash.com/photo-1613794713137-a78aba4be84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGlsZHJlbiUyMHBsYXlpbmd8ZW58MHx8fHwxNzU4OTU0NzQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "children playing"
+    },
+    {
+      "id": "about-history",
+      "description": "An old, historic picture of the original church building.",
+      "imageUrl": "https://images.unsplash.com/photo-1622384788619-328602f113cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoaXN0b3JpYyUyMGJ1aWxkaW5nfGVufDB8fHx8MTc1OTAwNjU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historic building"
+    }
+  ]
 }
