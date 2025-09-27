@@ -68,17 +68,17 @@ export const ministries: Ministry[] = [
     id: 1,
     name: 'Youth Ministry',
     description: 'Engaging our teens with the gospel through fun activities, worship, and small group discussions.',
-    leader: 'Michael Chen',
+    leader: 'Mr.Evans',
     meetingTime: 'Fridays at 7:00 PM',
-    image: 'ministry_youth',
+    image: '/youth.jpeg',
   },
   {
     id: 3,
     name: 'Music & Worship Arts',
     description: 'Leading the congregation in worship through music, song, and creative expression.',
-    leader: 'Emily White',
+    leader: 'Mr.Emmanuel',
     meetingTime: 'Thursdays at 6:30 PM',
-    image: 'ministry_music',
+    image: '/youth.jpeg',
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const ministries: Ministry[] = [
     description: 'Providing a safe and fun environment for children to learn about Jesus on their level.',
     leader: 'Sarah Brown',
     meetingTime: 'During Sunday Service',
-    image: 'ministry_children',
+    image: '/child.jpeg',
   },
   {
     id: 5,
@@ -94,7 +94,7 @@ export const ministries: Ministry[] = [
     description: 'Connecting women of all ages to grow in their faith and build lasting friendships.',
     leader: 'Jane Smith',
     meetingTime: 'First Saturday of each month',
-    image: 'ministry_women',
+    image: '/youth.jpeg',
   },
   {
     id: 6,
@@ -102,7 +102,7 @@ export const ministries: Ministry[] = [
     description: 'Challenging men to be leaders in their families, church, and community.',
     leader: 'John Doe',
     meetingTime: 'Second Saturday of each month',
-    image: 'ministry_men',
+    image: '/youth.jpeg',
   },
   {
     id: 7,
@@ -110,7 +110,7 @@ export const ministries: Ministry[] = [
     description: 'In-depth bible study for all ages to deepen understanding of the Word.',
     leader: 'Sarah Brown',
     meetingTime: 'Sundays at 9:00 AM',
-    image: 'ministry_sundayschool',
+    image: '/youth.jpeg',
   },
 ];
 

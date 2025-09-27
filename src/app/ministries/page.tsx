@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ministries } from '@/lib/mock-data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+// import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { User, Clock, Handshake, Church } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -23,21 +23,17 @@ export default function MinistriesPage() {
 
       <div className="container mx-auto px-4 py-20 md:py-28 space-y-24">
           {ministries.map((ministry, index) => {
-            const ministryImage = PlaceHolderImages.find((p) => p.id === ministry.image);
             const isReversed = index % 2 !== 0;
 
             return (
               <section key={ministry.id} className="grid items-center gap-12 md:grid-cols-2">
                 <div className={cn("relative h-[450px] w-full overflow-hidden rounded-lg shadow-2xl", isReversed && "md:order-last")}>
-                    {ministryImage && (
-                        <Image
-                        src={ministryImage.imageUrl}
-                        alt={ministry.name}
-                        data-ai-hint={ministryImage.imageHint}
-                        fill
-                        className="object-cover"
-                        />
-                    )}
+                    <Image
+                    src={ministry.image}
+                    alt={ministry.name}
+                    fill
+                    className="object-cover"
+                    />
                 </div>
                 <div className="space-y-6">
                     <div className="flex items-center gap-4">
