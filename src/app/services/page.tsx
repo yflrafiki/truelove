@@ -16,14 +16,17 @@ export default async function ServicesPage() {
 
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-20 md:py-28">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Join Us for a Service</h1>
-          <p className="mx-auto mt-4 text-lg text-muted-foreground">
-            We welcome you to join our services, experience heartfelt worship, and hear a life-changing message.
-          </p>
+      <div className="bg-secondary">
+        <div className="container mx-auto px-4 py-20 md:py-28">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Join Us for a Service</h1>
+            <p className="mx-auto mt-4 text-lg text-muted-foreground">
+              We welcome you to join our services, experience heartfelt worship, and hear a life-changing message.
+            </p>
+          </div>
         </div>
-
+      </div>
+      <div className="container mx-auto px-4 py-20 md:py-28">
         <div className="mt-16 grid gap-12 md:grid-cols-2">
           <div className="space-y-8">
             <Card className="shadow-xl bg-card">

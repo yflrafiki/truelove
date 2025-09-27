@@ -24,14 +24,18 @@ export default function SermonsPage() {
 
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-20 md:py-28">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Sermon Archive</h1>
-          <p className="mx-auto mt-4 text-lg text-muted-foreground">
-            Watch, listen, and be encouraged by messages from our past services.
-          </p>
+      <div className="bg-secondary">
+        <div className="container mx-auto px-4 py-20 md:py-28">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Sermon Archive</h1>
+            <p className="mx-auto mt-4 text-lg text-muted-foreground">
+              Watch, listen, and be encouraged by messages from our past services.
+            </p>
+          </div>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4 py-20 md:py-28">
         <div className="mt-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <h2 className="text-2xl font-headline font-bold">All Sermons ({sortedSermons.length})</h2>
           <div className="flex items-center gap-2">

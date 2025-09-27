@@ -3,15 +3,18 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function ContactPage() {
   return (
-    <div className="bg-secondary">
-      <div className="container mx-auto px-4 py-20 md:py-28">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Get in Touch</h1>
-          <p className="mx-auto mt-4 text-lg text-muted-foreground">
-            We'd love to hear from you. Whether you have a question, a prayer request, or just want to say hello, please don't hesitate to reach out.
-          </p>
+    <div className="bg-background">
+      <div className="bg-secondary">
+        <div className="container mx-auto px-4 py-20 md:py-28">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Get in Touch</h1>
+            <p className="mx-auto mt-4 text-lg text-muted-foreground">
+              We'd love to hear from you. Whether you have a question, a prayer request, or just want to say hello, please don't hesitate to reach out.
+            </p>
+          </div>
         </div>
-
+      </div>
+      <div className="container mx-auto px-4 py-20 md:py-28">
         <div className="mt-16 flex justify-center">
           <Card className="w-full max-w-lg shadow-xl bg-card">
             <CardHeader>
