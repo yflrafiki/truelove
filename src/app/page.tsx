@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] w-full text-white">
+      <section className="relative h-[70vh] w-full text-white">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -31,7 +31,7 @@ export default function Home() {
           <p className="mt-4 max-w-2xl text-lg md:text-xl">
             A place of faith, hope, and community.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg" className="mt-8">
             <Link href="/about">Learn More <ArrowRight className="ml-2" /></Link>
           </Button>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Upcoming Events</h2>
