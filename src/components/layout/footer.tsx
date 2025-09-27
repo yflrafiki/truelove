@@ -37,8 +37,7 @@ export default function Footer() {
           <div className="md:justify-self-end">
             <h3 className="font-headline text-lg font-semibold">Contact Us</h3>
             <address className="mt-4 not-italic text-muted-foreground space-y-2">
-              <p>123 Grace Avenue, Faith City, 12345</p>
-              <p>Email: <a href="mailto:contact@sanctuaryhub.org" className="hover:text-primary">contact@sanctuaryhub.org</a></p>
+              <p>Ashiyie</p>
               <p>Phone: <a href="tel:123-456-7890" className="hover:text-primary">(123) 456-7890</a></p>
             </address>
           </div>

@@ -17,14 +17,7 @@ export default function ContactPage() {
             <MapPin className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-xl font-semibold">Our Address</h3>
-              <p className="text-muted-foreground">123 Grace Avenue, Faith City, 12345</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <Mail className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-            <div>
-              <h3 className="text-xl font-semibold">Email Us</h3>
-              <a href="mailto:contact@sanctuaryhub.org" className="text-muted-foreground hover:text-primary">contact@sanctuaryhub.org</a>
+              <p className="text-muted-foreground">Ashiyie</p>
             </div>
           </div>
            <div className="flex items-start gap-4">
