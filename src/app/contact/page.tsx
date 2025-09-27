@@ -1,5 +1,4 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
-import { ContactForm } from './contact-form';
 
 export default function ContactPage() {
   return (
@@ -11,9 +10,9 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="mt-16 grid gap-12 md:grid-cols-2">
-        <div className="space-y-8">
-          <h2 className="font-headline text-3xl font-bold">Contact Information</h2>
+      <div className="mt-16 flex justify-center">
+        <div className="space-y-8 max-w-md">
+          <h2 className="font-headline text-3xl font-bold text-center">Contact Information</h2>
           <div className="flex items-start gap-4">
             <MapPin className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
             <div>
@@ -35,10 +34,6 @@ export default function ContactPage() {
               <a href="tel:123-456-7890" className="text-muted-foreground hover:text-primary">(123) 456-7890</a>
             </div>
           </div>
-        </div>
-
-        <div>
-            <ContactForm />
         </div>
       </div>
     </div>
