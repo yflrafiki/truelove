@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram } from 'lucide-react';
+import { Facebook } from 'lucide-react';
 import Logo from '@/components/icons/logo';
 import { NAV_LINKS } from '@/lib/constants';
 
@@ -19,12 +19,6 @@ export default function Footer() {
             <div className="mt-4 flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">
                 <Facebook className="h-6 w-6" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Twitter className="h-6 w-6" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Instagram className="h-6 w-6" />
               </Link>
             </div>
           </div>
