@@ -7,15 +7,19 @@ import { User, Clock } from 'lucide-react';
 export default function MinistriesPage() {
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-20 md:py-28">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Our Ministries</h1>
-          <p className="mx-auto mt-4 text-lg text-muted-foreground">
-            Find your place to connect, grow, and serve. There's a ministry for everyone at Sanctuary Hub.
-          </p>
+      <div className="bg-secondary">
+        <div className="container mx-auto px-4 py-20 md:py-28">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Our Ministries</h1>
+            <p className="mx-auto mt-4 text-lg text-muted-foreground">
+              Find your place to connect, grow, and serve. There's a ministry for everyone at Sanctuary Hub.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto px-4 py-20 md:py-28">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {ministries.map((ministry) => {
             const ministryImage = PlaceHolderImages.find((p) => p.id === ministry.image);
             return (
