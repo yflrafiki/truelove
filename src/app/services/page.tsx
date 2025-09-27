@@ -1,4 +1,4 @@
-import { Clock, Youtube } from 'lucide-react';
+import { Clock, Youtube, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Map from '@/components/map';
 import { getMapsApiKey } from '@/app/actions';
@@ -14,6 +14,14 @@ const serviceTimes = [
 export default async function ServicesPage() {
   const apiKey = await getMapsApiKey();
 
+  const servicesByDay: { [key: string]: typeof serviceTimes } = serviceTimes.reduce((acc, service) => {
+    if (!acc[service.day]) {
+      acc[service.day] = [];
+    }
+    acc[service.day].push(service);
+    return acc;
+  }, {} as { [key: string]: typeof serviceTimes });
+
   return (
     <div className="bg-background">
       <div className="bg-secondary">
@@ -27,54 +35,65 @@ export default async function ServicesPage() {
         </div>
       </div>
       <div className="container mx-auto px-4 py-20 md:py-28">
-        <div className="mt-16 grid gap-12 md:grid-cols-2">
-          <div className="space-y-8">
-            <Card className="shadow-xl bg-card">
-              <CardHeader>
-                <CardTitle className="font-headline text-3xl">Service Times</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-6">
-                  {serviceTimes.map((service, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mr-6">
-                        <Clock className="h-6 w-6 text-primary" />
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
+          <div className="space-y-12 lg:col-span-2">
+            <h2 className="font-headline text-4xl font-bold text-foreground">Our Weekly Schedule</h2>
+            <div className="grid gap-8 md:grid-cols-2">
+              {Object.entries(servicesByDay).map(([day, services]) => (
+                <Card key={day} className="bg-card shadow-xl transition-shadow duration-300 hover:shadow-2xl">
+                  <CardHeader>
+                    <CardTitle className="font-headline text-3xl text-primary">{day}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {services.map((service, index) => (
+                      <div key={index} className="flex items-start gap-4">
+                        <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-muted-foreground" />
+                        <div>
+                          <p className="font-semibold text-lg text-foreground">{service.time}</p>
+                          <p className="text-muted-foreground">{service.description}</p>
+                        </div>
                       </div>
-                      <div>
-                        <p className="font-bold text-lg text-foreground">{service.day} - {service.time}</p>
-                        <p className="text-muted-foreground">{service.description}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+                    ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
              <Card className="shadow-xl bg-card">
               <CardHeader>
-                <CardTitle className="font-headline text-3xl">Online Service</CardTitle>
+                <CardTitle className="font-headline text-3xl flex items-center gap-3">
+                  <Youtube className="h-8 w-8 text-red-600" />
+                  Online Service
+                </CardTitle>
               </CardHeader>
-              <CardContent className="flex items-start">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-500/10 mr-6">
-                    <Youtube className="h-6 w-6 text-red-600" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg text-foreground">Join our Live Stream</p>
-                    <p className="text-muted-foreground">
-                        Can't make it in person? Join our live stream every Sunday at 11:00 AM on our YouTube channel.
-                    </p>
-                  </div>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  Can't make it in person? Join our live stream every Sunday at 8:00 AM on our YouTube channel.
+                </p>
               </CardContent>
             </Card>
           </div>
 
-          <div className="h-[400px] md:h-full w-full overflow-hidden rounded-lg shadow-xl">
-            {apiKey ? (
-              <Map apiKey={apiKey} />
-            ) : (
-              <div className="flex h-full w-full items-center justify-center bg-muted rounded-lg">
-                <p className="text-muted-foreground">Could not load map. API key is missing.</p>
-              </div>
-            )}
+          <div className="space-y-8">
+             <Card className="shadow-xl bg-card">
+                <CardHeader>
+                    <CardTitle className="font-headline text-3xl flex items-center gap-3">
+                       <MapPin className="h-8 w-8 text-primary" />
+                        Our Location
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                     <p className="text-muted-foreground mb-6">Ashiyie</p>
+                    <div className="h-80 w-full overflow-hidden rounded-lg">
+                        {apiKey ? (
+                        <Map apiKey={apiKey} />
+                        ) : (
+                        <div className="flex h-full w-full items-center justify-center bg-muted rounded-lg">
+                            <p className="text-muted-foreground">Could not load map. API key is missing.</p>
+                        </div>
+                        )}
+                    </div>
+                </CardContent>
+             </Card>
           </div>
         </div>
       </div>
