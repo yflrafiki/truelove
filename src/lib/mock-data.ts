@@ -148,7 +148,7 @@ export const leaders: Leader[] = [
   {
     id: 3,
     name: 'Michael Chen',
-    title: 'Youth Pastor',
+    title: 'Associate Pastor',
     bio: 'Michael has a heart for the next generation. He creates a dynamic and welcoming environment for teenagers to connect with God and with each other.',
     photo: 'leader3',
   },

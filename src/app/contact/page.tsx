@@ -38,7 +38,6 @@ export default function ContactPage() {
         </div>
 
         <div>
-            <h2 className="font-headline text-3xl font-bold mb-8">Send Us a Message</h2>
             <ContactForm />
         </div>
       </div>
