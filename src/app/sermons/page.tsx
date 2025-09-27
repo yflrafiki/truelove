@@ -24,20 +24,20 @@ export default function SermonsPage() {
 
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="text-center">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-5xl">Sermon Archive</h1>
-          <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
+      <div className="container mx-auto px-4 py-20 md:py-28">
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-5xl">Sermon Archive</h1>
+          <p className="mx-auto mt-4 text-lg text-muted-foreground">
             Watch, listen, and be encouraged by messages from our past services.
           </p>
         </div>
 
-        <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+        <div className="mt-16 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <h2 className="text-2xl font-headline font-bold">All Sermons ({sortedSermons.length})</h2>
           <div className="flex items-center gap-2">
-              <span className="text-muted-foreground">Sort by:</span>
+              <span className="text-sm font-medium text-muted-foreground">Sort by:</span>
               <Select value={sortOrder} onValueChange={(value: 'newest' | 'oldest') => setSortOrder(value)}>
-                <SelectTrigger className="w-[180px]">
+                <SelectTrigger className="w-[180px] bg-card">
                   <SelectValue placeholder="Sort order" />
                 </SelectTrigger>
                 <SelectContent>
@@ -52,25 +52,26 @@ export default function SermonsPage() {
           {sortedSermons.map((sermon) => {
             const sermonImage = PlaceHolderImages.find((p) => p.id === sermon.thumbnail);
             return (
-              <Card key={sermon.id} className="group flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <Card key={sermon.id} className="group flex flex-col overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl bg-card">
                 {sermonImage && (
-                  <div className="relative h-48 w-full overflow-hidden">
+                  <div className="relative h-56 w-full overflow-hidden">
                     <Image
                       src={sermonImage.imageUrl}
                       alt={sermon.title}
                       data-ai-hint={sermonImage.imageHint}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   </div>
                 )}
                 <CardContent className="flex flex-grow flex-col p-6">
-                  <Badge variant="secondary" className="w-fit">
+                  <Badge variant="secondary" className="w-fit self-start">
                       <BookOpen className="mr-2 h-4 w-4" />
                       {sermon.series}
                   </Badge>
                   <h3 className="mt-4 font-headline text-xl font-bold">{sermon.title}</h3>
-                  <div className="mt-2 flex-grow space-y-2 text-sm text-muted-foreground">
+                  <div className="mt-4 flex-grow space-y-2 text-sm text-muted-foreground">
                     <div className="flex items-center">
                         <User className="mr-2 h-4 w-4 text-primary" />
                         <span>{sermon.preacher}</span>
@@ -80,8 +81,8 @@ export default function SermonsPage() {
                         <span>{format(parseISO(sermon.date), 'MMMM d, yyyy')}</span>
                     </div>
                   </div>
-                  <div className="mt-6 flex gap-2">
-                    <Button asChild variant="default" className="flex-1">
+                  <div className="mt-6 flex gap-3">
+                    <Button asChild className="flex-1">
                       <a href={sermon.videoUrl} target="_blank" rel="noopener noreferrer">
                         <PlayCircle className="mr-2" /> Watch
                       </a>

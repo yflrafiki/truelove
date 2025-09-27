@@ -34,19 +34,19 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2" onClick={() => setIsSheetOpen(false)}>
-          <Logo className="h-8 w-8 text-primary" />
-          <span className="font-headline text-2xl font-bold">True love Assemblies of God</span>
+          <Logo className="h-10 w-10 text-primary" />
+          <span className="font-headline text-2xl font-bold hidden sm:inline">True love Assemblies of God</span>
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary',
-                pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                'px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-primary hover:bg-secondary',
+                pathname === link.href ? 'text-primary font-semibold' : 'text-muted-foreground'
               )}
             >
               {link.label}
@@ -62,7 +62,7 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-0">
                 <VisuallyHidden>
                     <SheetTitle>Main Menu</SheetTitle>
                     <SheetDescription>
@@ -73,7 +73,7 @@ export default function Header() {
                  <div className="flex items-center justify-between p-4 border-b">
                    <Link href="/" className="flex items-center gap-2" onClick={() => setIsSheetOpen(false)}>
                       <Logo className="h-8 w-8 text-primary" />
-                      <span className="font-headline text-2xl font-bold">True love Assemblies of God</span>
+                      <span className="font-headline text-xl font-bold">Sanctuary Hub</span>
                    </Link>
                    <SheetClose asChild>
                       <Button variant="ghost" size="icon">
@@ -82,24 +82,21 @@ export default function Header() {
                       </Button>
                     </SheetClose>
                  </div>
-                <nav className="mt-8 flex flex-col gap-6 px-4">
+                <nav className="mt-8 flex flex-col gap-2 px-4">
                   {NAV_LINKS.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsSheetOpen(false)}
                       className={cn(
-                        'text-lg font-medium transition-colors hover:text-primary',
-                        pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                        'text-lg font-medium transition-colors hover:text-primary rounded-md px-4 py-3',
+                        pathname === link.href ? 'text-primary bg-secondary' : 'text-muted-foreground hover:bg-secondary/50'
                       )}
                     >
                       {link.label}
                     </Link>
                   ))}
                 </nav>
-                <div className="mt-auto p-4">
-                    
-                </div>
               </div>
             </SheetContent>
           </Sheet>
