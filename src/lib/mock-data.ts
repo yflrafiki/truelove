@@ -105,14 +105,6 @@ export const ministries: Ministry[] = [
     image: 'ministry_youth',
   },
   {
-    id: 2,
-    name: 'Community Outreach',
-    description: 'Serving our local community through food drives, volunteer work, and partnership with local charities.',
-    leader: 'Jane Smith',
-    meetingTime: 'Varies by event',
-    image: 'ministry_outreach',
-  },
-  {
     id: 3,
     name: 'Music & Worship Arts',
     description: 'Leading the congregation in worship through music, song, and creative expression.',

@@ -38,8 +38,8 @@
     },
     {
       "id": "leader3",
-      "description": "Portrait of Youth Pastor Michael Chen.",
-      "imageUrl": "https://storage.googleapis.com/project-1-419823.appspot.com/64b975871f7624c968969e623a6abf5b.png",
+      "description": "Portrait of Associate Pastor Michael Chen.",
+      "imageUrl": "https://storage.googleapis.com/project-1-419823.appspot.com/d0b93809-22a8-4360-b620-802c0bde158e.png",
       "imageHint": "person smiling"
     },
     {
@@ -68,15 +68,9 @@
     },
     {
       "id": "ministry_youth",
-      "description": "Teenagers in a youth group.",
-      "imageUrl": "https://images.unsplash.com/photo-1622318731211-3bcfcf8849c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWVuYWdlcnMlMjBmcmllbmRzfGVufDB8fHx8MTc1OTAwNjU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teenagers friends"
-    },
-    {
-      "id": "ministry_outreach",
-      "description": "Community outreach event.",
-      "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21tdW5pdHklMjBzZXJ2aWNlfGVufDB8fHx8MTc1ODk1Njg3OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community service"
+      "description": "The youth ministry online prayer service.",
+      "imageUrl": "https://storage.googleapis.com/project-1-419823.appspot.com/a5906d20-b3a1-4340-9a3e-d820dd5e3264.png",
+      "imageHint": "youth praying"
     },
     {
       "id": "ministry_music",
