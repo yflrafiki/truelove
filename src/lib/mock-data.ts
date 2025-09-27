@@ -1,4 +1,4 @@
-import type { Event, Sermon, Ministry, Leader } from './types';
+import type { Sermon, Ministry, Leader } from './types';
 import { subDays, addDays, set } from 'date-fns';
 
 // Helper to get the next Friday
@@ -9,48 +9,6 @@ const getNextFriday = () => {
   const nextFriday = addDays(today, daysUntilFriday === 0 ? 7 : daysUntilFriday); // If today is Friday, get next Friday
   return set(nextFriday, { hours: 1, minutes: 0, seconds: 0, milliseconds: 0 });
 };
-
-
-export const events: Event[] = [
-  {
-    id: 1,
-    title: 'Sunday Worship Service',
-    date: new Date().toISOString(),
-    location: 'Main Sanctuary',
-    description: 'Join us for our weekly worship service with music and a powerful message.',
-    image: 'event1',
-    type: 'service',
-  },
-  {
-    id: 3,
-    title: 'Youth Group Movie Night',
-    date: addDays(new Date(), 12).toISOString(),
-    location: 'Youth Hall',
-    description: 'A fun night for our youth group with a movie, popcorn, and games.',
-    image: 'event3',
-    type: 'ministry',
-  },
-  {
-    id: 4,
-    title: 'Easter Celebration',
-    date: addDays(new Date(), 25).toISOString(),
-    location: 'Main Sanctuary',
-    description: 'Celebrate the resurrection of Jesus with special music and a message of hope.',
-    image: 'event1',
-    type: 'special',
-  },
-    {
-    id: 5,
-    title: 'Youth Prayers',
-    date: getNextFriday().toISOString(),
-    location: 'Online',
-    description: 'Join the youth for a powerful time of prayer every Friday morning.',
-    image: 'ministry_youth',
-    type: 'ministry',
-  },
-];
-
-export const featuredEvents = events.slice(0, 3);
 
 export const sermons: Sermon[] = [
   {

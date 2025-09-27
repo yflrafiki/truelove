@@ -3,16 +3,6 @@ export interface NavLink {
   label: string;
 }
 
-export interface Event {
-  id: number;
-  title: string;
-  date: string;
-  location: string;
-  description: string;
-  image: string;
-  type: 'service' | 'ministry' | 'special';
-}
-
 export interface Sermon {
   id: number;
   title: string;
