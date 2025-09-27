@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Calendar, MapPin, Church } from 'lucide-react';
+import { ArrowRight, Calendar, MapPin, Church, Handshake, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { featuredEvents } from '@/lib/mock-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { format } from 'date-fns';
@@ -42,21 +42,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-secondary/30 py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <Card className="text-center shadow-lg border-none p-8 md:p-12 bg-card">
-              <div className="flex justify-center mb-4">
-                <Church className="h-12 w-12 text-primary"/>
-              </div>
-              <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Mission</h2>
-              <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-                To foster a vibrant, inclusive community dedicated to spiritual growth, compassionate service, and spreading love and understanding in the world.
-              </p>
-          </Card>
+            <div className="text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl text-primary">Our Core Values</h2>
+                <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+                    Guiding our community in faith, service, and fellowship.
+                </p>
+            </div>
+            <div className="mt-12 grid gap-8 md:grid-cols-3">
+                <Card className="text-center border-0 bg-transparent shadow-none">
+                    <CardContent className="p-6">
+                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-6">
+                            <Church className="h-8 w-8 text-primary"/>
+                        </div>
+                        <h3 className="font-headline text-2xl font-bold">Faith</h3>
+                        <p className="mt-2 text-muted-foreground">Centered on the teachings of Jesus Christ and the truth of the Gospel.</p>
+                    </CardContent>
+                </Card>
+                <Card className="text-center border-0 bg-transparent shadow-none">
+                    <CardContent className="p-6">
+                        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-6">
+                            <Heart className="h-8 w-8 text-primary"/>
+                        </div>
+                        <h3 className="font-headline text-2xl font-bold">Love</h3>
+                        <p className="mt-2 text-muted-foreground">Fostering a welcoming community where everyone is valued and supported.</p>
+                    </CardContent>
+                </Card>
+                <Card className="text-center border-0 bg-transparent shadow-none">
+                    <CardContent className="p-6">
+                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-6">
+                            <Handshake className="h-8 w-8 text-primary"/>
+                        </div>
+                        <h3 className="font-headline text-2xl font-bold">Service</h3>
+                        <p className="mt-2 text-muted-foreground">Serving our neighbors and sharing our blessings with the wider community.</p>
+                    </CardContent>
+                </Card>
+            </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Upcoming Events</h2>
@@ -68,26 +94,24 @@ export default function Home() {
             {featuredEvents.map((event) => {
               const eventImage = PlaceHolderImages.find(p => p.id === event.image);
               return (
-                <Card key={event.id} className="flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                  <CardHeader className="p-0">
+                <Card key={event.id} className="group flex flex-col overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
                     {eventImage && (
-                      <div className="relative h-48 w-full">
+                      <div className="relative h-48 w-full overflow-hidden">
                         <Image
                           src={eventImage.imageUrl}
                           alt={event.title}
                           data-ai-hint={eventImage.imageHint}
                           fill
-                          className="object-cover"
+                          className="object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                       </div>
                     )}
-                  </CardHeader>
-                  <CardContent className="p-6 flex-grow">
-                    <CardTitle className="font-headline text-xl">{event.title}</CardTitle>
-                    <CardDescription className="mt-2 text-muted-foreground line-clamp-2">
+                  <CardContent className="p-6 flex-grow flex flex-col">
+                    <h3 className="font-headline text-xl font-bold">{event.title}</h3>
+                    <p className="mt-2 text-muted-foreground line-clamp-2 flex-grow">
                       {event.description}
-                    </CardDescription>
-                    <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
+                    </p>
+                    <div className="mt-4 space-y-2 text-sm text-muted-foreground">
                       <div className="flex items-center">
                         <Calendar className="mr-2 h-4 w-4 text-primary" />
                         <span>{format(new Date(event.date), 'MMMM d, yyyy')}</span>
@@ -97,9 +121,7 @@ export default function Home() {
                         <span>{event.location}</span>
                       </div>
                     </div>
-                  </CardContent>
-                  <CardContent className="p-6 pt-0">
-                     <Button asChild variant="link" className="px-0">
+                     <Button asChild variant="link" className="px-0 mt-4 self-start">
                         <Link href="/events">
                           Learn More <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
