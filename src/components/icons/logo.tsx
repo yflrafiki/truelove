@@ -1,11 +1,23 @@
 import type { SVGProps } from 'react';
 
 export default function Logo(props: SVGProps<SVGSVGElement>) {
+  const {
+    // Destructure and omit props that are already defined in the SVG
+    viewBox,
+    fill,
+    stroke,
+    strokeWidth,
+    strokeLinecap,
+    strokeLinejoin,
+    xmlns,
+    ...rest
+  } = props;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 200 200"
-      {...props}
+      {...rest}
     >
       <g>
         <path fill="#FFD700" d="M20,20 h160 v40 H20z" />
