@@ -4,9 +4,10 @@ import Map from '@/components/map';
 import { getMapsApiKey } from '@/app/actions';
 
 const serviceTimes = [
-  { day: 'Sunday', time: '9:00 AM - Morning Worship' },
-  { day: 'Sunday', time: '11:00 AM - Contemporary Service' },
-  { day: 'Wednesday', time: '7:00 PM - Midweek Bible Study' },
+  { day: 'Sunday', time: '8:00 AM - 12:00 PM', description: 'Main Service (Sunday School: 11:00 AM - 11:30 AM)' },
+  { day: 'Wednesday', time: '9:00 AM - 11:00 AM', description: 'Victory Hour' },
+  { day: 'Wednesday', time: '6:30 PM - 8:00 PM', description: 'Bible Studies' },
+  { day: 'Friday', time: '6:30 PM - 8:00 PM', description: 'Prayer Time' },
 ];
 
 export default async function ServicesPage() {
@@ -32,8 +33,8 @@ export default async function ServicesPage() {
                 <li key={index} className="flex items-start">
                   <Clock className="mr-4 mt-1 h-5 w-5 text-primary" />
                   <div>
-                    <p className="font-semibold">{service.day}</p>
-                    <p className="text-muted-foreground">{service.time}</p>
+                    <p className="font-semibold">{service.day} - {service.time}</p>
+                    <p className="text-muted-foreground">{service.description}</p>
                   </div>
                 </li>
               ))}
