@@ -64,22 +64,18 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {leaders.map((leader) => {
-              const leaderImage = PlaceHolderImages.find((p) => p.id === leader.photo);
-              return (
+            {leaders.map((leader) => (
                 <Card key={leader.id} className="text-center bg-card overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl">
                   <CardHeader className="p-0">
-                    {leaderImage && (
                       <div className="relative h-64 w-full overflow-hidden">
                         <Image
-                          src={leaderImage.imageUrl}
+                          src={leader.photo}
                           alt={leader.name}
-                          data-ai-hint={leaderImage.imageHint}
-                          fill
-                          className="object-cover"
+                          width={400}
+                          height={400}
+                          className="object-cover w-full h-full"
                         />
                       </div>
-                    )}
                   </CardHeader>
                   <CardContent className="p-6">
                     <CardTitle className="font-headline text-2xl">{leader.name}</CardTitle>
@@ -87,8 +83,7 @@ export default function AboutPage() {
                     <p className="mt-4 text-sm text-muted-foreground">{leader.bio}</p>
                   </CardContent>
                 </Card>
-              );
-            })}
+              ))}
           </div>
         </div>
       </section>

@@ -117,30 +117,18 @@ export const ministries: Ministry[] = [
 export const leaders: Leader[] = [
   {
     id: 1,
-    name: 'Pastor John Doe',
+    name: 'Rev. Eric A',
     title: 'Senior Pastor',
-    bio: 'Pastor John has been leading Sanctuary Hub for over 15 years, with a passion for teaching the Word of God and helping people grow in their faith. He and his wife, Mary, have three children.',
-    photo: 'leader1',
+    bio: 'Rev Eric has been leading True Love Assemblies of God for over 15 years, with a passion for teaching the Word of God and helping people grow in their faith. He and his wife, Mary, have three children.',
+    photo: '/eric.jpeg',
   },
+ 
   {
     id: 2,
-    name: 'Jane Smith',
-    title: 'Associate Pastor & Outreach Director',
-    bio: 'Jane oversees our community outreach programs and often speaks on Sundays. She is dedicated to putting faith into action and serving the needs of our city.',
-    photo: 'leader2',
-  },
-  {
-    id: 3,
-    name: 'Michael Chen',
+    name: 'Rev. Matthew',
     title: 'Associate Pastor',
-    bio: 'Michael has a heart for the next generation. He creates a dynamic and welcoming environment for teenagers to connect with God and with each other.',
-    photo: 'leader3',
+    bio: 'Rev. Matthew has a heart for the next generation. He creates a dynamic and welcoming environment for teenagers to connect with God and with each other.',
+    photo: '/mat.jpeg',
   },
-  {
-    id: 4,
-    name: 'Emily White',
-    title: 'Music Director',
-    bio: 'Emily leads our talented worship team. Her goal is to create an atmosphere where the congregation can connect with God through music and praise.',
-    photo: 'leader4',
-  },
+ 
 ];
