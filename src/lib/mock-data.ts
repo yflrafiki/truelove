@@ -119,7 +119,7 @@ export const leaders: Leader[] = [
     id: 1,
     name: 'Rev. Eric A',
     title: 'Senior Pastor',
-    bio: 'Rev Eric has been leading True Love Assemblies of God for over 15 years, with a passion for teaching the Word of God and helping people grow in their faith. He and his wife, Mary, have three children.',
+    bio: 'Rev Eric has been leading True Love Assemblies of God for over 15 years, with a passion for teaching the Word of God and helping people grow in their faith.',
     photo: '/eric.jpeg',
   },
  
